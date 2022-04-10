@@ -1,3 +1,3 @@
-# Project River-Flow
+# project river-flow
 
 ## A wallpaper application
