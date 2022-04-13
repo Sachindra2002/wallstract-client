@@ -1,7 +1,7 @@
-import Card from "../ui/Card";
+import Card from "../WallpaperCard/WallpaperCard";
 import classes from "./WallpaperItem.module.css";
 
-function MeetupItem(props) {
+function WallpaperItem(props) {
   return (
     <li className={classes.item}>
       <Card>
@@ -20,4 +20,4 @@ function MeetupItem(props) {
   );
 }
 
-export default MeetupItem;
+export default WallpaperItem;

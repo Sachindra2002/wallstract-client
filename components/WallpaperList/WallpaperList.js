@@ -1,19 +1,19 @@
 import WallpaperItem from "../WallpaperItem/WallpaperItem";
-import classes from "./MeetupList.module.css";
+import classes from "./WallpaperList.module.css";
 
 function WallpaperList(props) {
   return (
     <ul className={classes.list}>
-      {props.meetups.map((wallpaper) => (
+      {props.wallpapers.map((wallpaper) => (
         <WallpaperItem
-          key={meetup.id}
-          id={meetup.id}
-          image={meetup.image}
-          title={meetup.title}
+          key={wallpaper.wallpaperId}
+          id={wallpaper.wallpaperId}
+          image={wallpaper.imageUrl}
+          title={wallpaper.title}
         />
       ))}
     </ul>
   );
 }
 
-export default MeetupList;
+export default WallpaperList;
