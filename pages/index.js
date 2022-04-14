@@ -1,4 +1,6 @@
-import MeetupList from "../components/WallpaperList/WallpaperList";
+import WallpaperList from "../components/WallpaperList/WallpaperList";
+import WallpaperCarousel from "../components/WallpaperCarousel/WallpaperCarousel";
+import { SliderData } from "../components/WallpaperCarousel/SliderData";
 
 const DUMMY_WALLPAPERS = [
   {
@@ -31,7 +33,12 @@ const DUMMY_WALLPAPERS = [
 ];
 
 function HomePage() {
-  return <MeetupList wallpapers={DUMMY_WALLPAPERS} />;
+  return (
+    <>
+      <WallpaperCarousel slides={SliderData} />
+      <WallpaperList wallpapers={DUMMY_WALLPAPERS} />
+    </>
+  );
 }
 
 export default HomePage;
