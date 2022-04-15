@@ -23,7 +23,7 @@ a {
   align-items: center;
 }
 
-.image {
+.image-slider {
   width: 1000px;
   height: 600px;
   border-radius: 10px;
@@ -60,4 +60,47 @@ a {
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
+}
+
+.NavbarItems {
+  background: white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.navbar-logo {
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 50px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.image-logo {
+  width: 250px;
+}
+
+.nav-links {
+  color: black;
+  text-decoration: none;
+  padding: 5px 5px 5px 5px;
+}
+
+.nav-links:hover {
+  background-color: lightgray;
+  color: black;
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
 }

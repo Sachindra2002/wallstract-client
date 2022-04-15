@@ -29,7 +29,7 @@ function WallpaperCarousel({ slides }) {
             key={index}
           >
             {index === current && (
-              <img src={wallpaper.imageUrl} alt="cofee" className="image" />
+              <img src={wallpaper.imageUrl} alt="cofee" className="image-slider" />
             )}
           </div>
         );

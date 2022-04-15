@@ -1,21 +1,36 @@
-import classes from "./Navigation.module.css";
+import { Component } from "react";
+import { MenuItems } from "./MenuItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-function Navigation() {
-  return (
-    <header className={classes.header}>
-      <div className={classes.logo}>WallStract</div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Wallpapers</Link>
-          </li>
-          <li>
-            <Link to="/new-meetup">Collections</Link>
-          </li>
+import Logo from "../../Assets/Logo/logo2.png";
+
+class Navbar extends Component {
+  state = { clicked: false };
+
+  render() {
+    return (
+      <nav className="NavbarItems">
+        <div className="navbar-logo">
+          <img className="image-logo" src={Logo.src} alt="Logo" />
+        </div>
+        {/* <div className="menu-icon" onClick={this.handleClick}>
+          <i className={this.state.clicked ? faTimes : faBars}></i>
+        </div>   */}
+        <ul className="nav-menu">
+          {MenuItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <a className={item.cName} href={item.url}>
+                  {item.title}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
-    </header>
-  );
+    );
+  }
 }
 
-export default Navigation;
+export default Navbar;
