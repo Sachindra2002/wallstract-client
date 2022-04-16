@@ -1,4 +1,8 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -14,6 +18,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
 
 .slider {
   position: relative;
@@ -103,4 +109,4 @@ a {
   color: white;
   border-radius: 5px;
   transition: all 0.1s ease-out;
-}
+} */

@@ -1,40 +1,21 @@
-import { useState } from "react";
-import { SliderData } from "./SliderData";
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+// import Slider from "@madzadev/image-slider";
 
-function WallpaperCarousel({ slides }) {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
+const images = [
+  { url: "https://picsum.photos/seed/a/1600/900" },
+  { url: "https://picsum.photos/seed/b/1920/1080" },
+  { url: "https://picsum.photos/seed/c/1366/768" },
+];
 
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
-
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
-
+function WallpaperCarousel(props) {
   return (
-    <section className="slider">
-      <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-      {SliderData.map((wallpaper, index) => {
-        return (
-          <div
-            className={index === current ? "slide active" : "slide"}
-            key={index}
-          >
-            {index === current && (
-              <img src={wallpaper.imageUrl} alt="cofee" className="image-slider" />
-            )}
-          </div>
-        );
-      })}
-    </section>
+    // <Slider
+    //   showArrowControls={true}
+    //   showDotControls={true}
+    //   imageList={images}
+    //   width={1000}
+    //   height={300}
+    // />
+    <div>hi</div>
   );
 }
 

@@ -1,7 +1,7 @@
 import WallpaperList from "../components/WallpaperList/WallpaperList";
 import WallpaperCarousel from "../components/WallpaperCarousel/WallpaperCarousel";
 import { SliderData } from "../components/WallpaperCarousel/SliderData";
-import Navbar from "../components/Navigation/Navigation";
+import Navbar from "../components/Navbar/Navbar";
 
 const DUMMY_WALLPAPERS = [
   {
@@ -37,8 +37,8 @@ function HomePage() {
   return (
     <>
       <Navbar />
-      <WallpaperCarousel slides={SliderData} />
-      <WallpaperList wallpapers={DUMMY_WALLPAPERS} />
+      {/* <WallpaperCarousel />
+      <WallpaperList wallpapers={DUMMY_WALLPAPERS} /> */}
     </>
   );
 }
