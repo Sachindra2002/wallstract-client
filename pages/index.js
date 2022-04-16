@@ -1,14 +1,13 @@
 import WallpaperList from "../components/WallpaperList/WallpaperList";
-import WallpaperCarousel from "../components/WallpaperCarousel/WallpaperCarousel";
-import { SliderData } from "../components/WallpaperCarousel/SliderData";
 import Navbar from "../components/Navbar/Navbar";
+import SlideShow from "../components/HeroSection/SlideShow";
 
 const DUMMY_WALLPAPERS = [
   {
     wallpaperId: "w1",
     title: "ocean",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1DAO3ioxCZQaDJFskSy3gOaYl3RPq1MpCHA&usqp=CAU",
+      "https://www.teahub.io/photos/full/28-284870_wallpaper-railway-evening-horizon-4k-wallpapers-16-9.jpg",
     date: "date-here",
     size: "1MB",
     description: "A picture of the ocean",
@@ -17,7 +16,7 @@ const DUMMY_WALLPAPERS = [
     wallpaperId: "w2",
     title: "ocean",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1DAO3ioxCZQaDJFskSy3gOaYl3RPq1MpCHA&usqp=CAU",
+      "https://i.pinimg.com/originals/65/53/38/655338c996b7fc0b1c0a7e8df5c29c7d.jpg",
     date: "date-here",
     size: "1MB",
     description: "A picture of the ocean",
@@ -25,8 +24,7 @@ const DUMMY_WALLPAPERS = [
   {
     wallpaperId: "w3",
     title: "ocean",
-    imageUrl:
-      "https://images.unsplash.com/photo-1513553404607-988bf2703777?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80",
+    imageUrl: "https://wallpaperaccess.com/full/1406842.jpg",
     date: "date-here",
     size: "1MB",
     description: "A picture of the ocean",
@@ -37,7 +35,7 @@ function HomePage() {
   return (
     <>
       <Navbar />
-      {/* <WallpaperCarousel />
+      <SlideShow wallpapers={DUMMY_WALLPAPERS} />
       <WallpaperList wallpapers={DUMMY_WALLPAPERS} /> */}
     </>
   );
