@@ -2,6 +2,7 @@ import React from "react";
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import arrow from "../../Assets/Icons/arrow.svg";
+import Navbar from "../Navbar/Navbar";
 
 function SlideShow(props) {
   const zoomInProperties = {
@@ -51,18 +52,20 @@ function SlideShow(props) {
   };
 
   return (
-    <div className="m-10">
-      <Zoom {...zoomInProperties}>
-        {props.wallpapers.map((each, index) => (
-          <div key={index} className="flex justify-center w-full h-full">
-            <img
-              src={each.imageUrl}
-              className="w-3/4 object-cover rounded-lg shadow-xl"
-            />
-          </div>
-        ))}
-      </Zoom>
-    </div>
+    <>
+      <div className="m-10">
+        <Zoom {...zoomInProperties}>
+          {props.wallpapers.map((each, index) => (
+            <div key={index} className="flex justify-center w-full h-full">
+              <img
+                src={each.imageUrl}
+                className="w-3/4 object-cover rounded-lg shadow-xl"
+              />
+            </div>
+          ))}
+        </Zoom>
+      </div>
+    </>
   );
 }
 

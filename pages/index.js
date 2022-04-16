@@ -29,6 +29,49 @@ const DUMMY_WALLPAPERS = [
     size: "1MB",
     description: "A picture of the ocean",
   },
+  {
+    wallpaperId: "w4",
+    title: "ocean",
+    imageUrl: "https://wallpapercave.com/wp/wp3137933.jpg",
+    date: "date-here",
+    size: "1MB",
+    description: "A picture of the ocean",
+  },
+  {
+    wallpaperId: "w5",
+    title: "ocean",
+    imageUrl: "https://wallpaperaccess.com/full/3137469.png",
+    date: "date-here",
+    size: "1MB",
+    description: "A picture of the ocean",
+  },
+  {
+    wallpaperId: "w6",
+    title: "ocean",
+    imageUrl:
+      "https://www.teahub.io/photos/full/179-1793801_2k-wallpapers-16-9.jpg",
+    date: "date-here",
+    size: "1MB",
+    description: "A picture of the ocean",
+  },
+  {
+    wallpaperId: "w7",
+    title: "ocean",
+    imageUrl:
+      "https://wallpapersmug.com/download/3840x2160/11a3dc/firewatch-game-sunset-artwork.jpg",
+    date: "date-here",
+    size: "1MB",
+    description: "A picture of the ocean",
+  },
+  {
+    wallpaperId: "w8",
+    title: "ocean",
+    imageUrl:
+      "https://3.bp.blogspot.com/-hNWh6ShDJGs/XFUltMH2fsI/AAAAAAAABz0/_UwOXZDl3ZEtejlpgFQoUBJ_rjt3O9ipgCKgBGAs/w2560-h1440-c/mountains-fog-landscape-scenery-16-4K.jpg",
+    date: "date-here",
+    size: "1MB",
+    description: "A picture of the ocean",
+  },
 ];
 
 function HomePage() {
@@ -36,7 +79,7 @@ function HomePage() {
     <>
       <Navbar />
       <SlideShow wallpapers={DUMMY_WALLPAPERS} />
-      <WallpaperList wallpapers={DUMMY_WALLPAPERS} /> */}
+      <WallpaperList wallpapers={DUMMY_WALLPAPERS} />
     </>
   );
 }
