@@ -6,11 +6,11 @@ import Navbar from "../Navbar/Navbar";
 
 function SlideShow(props) {
   const zoomInProperties = {
-    indicators: true,
+    // indicators: true,
     scale: 1.2,
     duration: 5000,
     transitionDuration: 500,
-    Infinite: true,
+    infinite: true,
 
     prevArrow: (
       <div style={{ width: "30px", marginRight: "-30px", cursor: "pointer" }}>
@@ -19,10 +19,10 @@ function SlideShow(props) {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-arrow-left-circle"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="feather feather-arrow-left-circle"
         >
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 8 8 12 12 16"></polyline>
@@ -38,10 +38,10 @@ function SlideShow(props) {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-arrow-right-circle"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="feather feather-arrow-right-circle"
         >
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 16 16 12 12 8"></polyline>
@@ -59,7 +59,7 @@ function SlideShow(props) {
             <div key={index} className="flex justify-center w-full h-full">
               <img
                 src={each.imageUrl}
-                className="w-3/4 object-cover rounded-lg shadow-xl"
+                className="w-3/4 object-cover rounded-lg shadow-xl cursor-pointer"
               />
             </div>
           ))}

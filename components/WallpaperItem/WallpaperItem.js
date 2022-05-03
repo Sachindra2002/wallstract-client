@@ -1,13 +1,19 @@
-import Card from "../WallpaperCard/WallpaperCard";
 import classes from "./WallpaperItem.module.css";
 
 function WallpaperItem(props) {
+  const click = () => {
+    alert(props.description);
+  };
+
   return (
-    <Card className="rounded-md">
+    <div className="card" onClick={click}>
       <div className="cursor-pointer rounded-md">
         <img className={classes.image} src={props.image} alt={props.title} />
+        <div className="desc">
+          <h2>{props.description}</h2>
+        </div>
       </div>
-    </Card>
+    </div>
   );
 }
 
